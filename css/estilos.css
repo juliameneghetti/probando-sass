@@ -1,0 +1,311 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spartan', sans-serif;
+}
+
+* button {
+  background-color: transparent;
+  border: transparent;
+}
+
+* body {
+  background-color: black;
+}
+
+.bg-dark {
+  background-color: transparent !important;
+}
+
+.navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #726e6e;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #e273a0;
+}
+
+.nav-link {
+  margin: 20px;
+}
+
+.navbar-collapse img {
+  height: 30px;
+  margin: 30px;
+}
+
+.header__logo--tamaño {
+  height: 100px;
+  width: auto;
+  padding-left: 20px;
+}
+
+/*BODY*/
+/* SECCIÓN HOME */
+/*VIDEO HOME*/
+.home--video {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/*BOTÓN TIENDA*/
+.home__boton--enlace {
+  display: block;
+  background-image: url("../MULTIMEDIA/IMG/HOME/mancha.png");
+  height: 200px;
+  width: 450px;
+  margin: 100px auto 0 auto;
+}
+
+.home__boton--enlace a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.home__boton--enlace:hover {
+  -webkit-animation: headShake;
+          animation: headShake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+/*SECCIÓN SOBRE MI*/
+.flex__sobreMi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url("../MULTIMEDIA/IMG/SOBRE_MI/mancha.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.flex__sobreMi img {
+  width: 600px;
+  height: 900px;
+  padding-top: 80px;
+}
+
+.flex__sobreMi p {
+  text-align: right;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 25px;
+  color: white;
+  width: 400px;
+  height: 700px;
+  padding-top: 250px;
+  padding-right: 70px;
+}
+
+/*SECCIÓN NEW IN*/
+.carousel__img--tamaño {
+  margin: 50px auto 0 auto;
+}
+
+/*SECCIÓN TIENDA*/
+.seccion__tienda--background {
+  background-image: url("../MULTIMEDIA/IMG/TIENDA/mancha.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.seccion__tienda--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding: 50px 0 100px;
+}
+
+.seccion__tienda--flex img {
+  width: 350px;
+  height: 450px;
+  border: 20px solid rgba(234, 155, 187, 0.4);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.seccion__tienda--flex img:hover {
+  width: 400px;
+  height: 500px;
+}
+
+.seccion__tienda--flex div {
+  margin-top: 5px;
+  background-color: rgba(234, 155, 187, 0.4);
+}
+
+.seccion__tienda--flex p {
+  font-size: 14px;
+  color: white;
+  padding-top: 5px;
+}
+
+.seccion__tienda--flex button:hover {
+  width: 100%;
+  background-color: rgba(234, 155, 187, 0.6);
+}
+
+/*SECCIÓN GALERÍA*/
+h1 {
+  font-size: medium;
+  color: white;
+  padding: 50px 40px;
+}
+
+.seccion__galeria--container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "uno dos tres" "cuatro cuatro cinco" "cuatro cuatro seis";
+  margin: 0 40px;
+}
+
+.seccion__galeria--container div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #e273a0;
+  padding: 10px;
+}
+
+.seccion__galeria--container img {
+  border: 10px solid white;
+  width: 400px;
+  height: 500px;
+}
+
+.seccion__galeria--container video {
+  border: 10px solid white;
+  width: auto;
+  height: auto;
+}
+
+.seccion__galeria--container .valor1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: uno;
+}
+
+.seccion__galeria--container .valor2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: dos;
+}
+
+.seccion__galeria--container .valor3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: tres;
+}
+
+.seccion__galeria--container .valor4 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: cuatro;
+}
+
+.seccion__galeria--container .valor5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: cinco;
+}
+
+.seccion__galeria--container .valor6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: seis;
+}
+
+/*SECCIÓN CONTACTO*/
+form fieldset {
+  padding: 40px;
+}
+
+form fieldset div {
+  margin: 30px 0;
+}
+
+form fieldset div label {
+  width: 200px;
+  height: 30px;
+  color: #e273a0;
+}
+
+form fieldset div input {
+  width: 400px;
+  height: 30px;
+  padding-left: 20px;
+}
+
+.formulario__background--estilo {
+  background-image: url("../MULTIMEDIA/IMG/CONTACTO/camcont.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.formulario__estilos--uno {
+  background-color: rgba(234, 155, 187, 0.4);
+  border: 1px solid white;
+  color: white;
+}
+
+.formulario__estilos--dos {
+  width: 300px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: rgba(73, 72, 72, 0.17);
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+footer img {
+  height: 70px;
+  margin: 0 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e273a0;
+}
+
+footer a:hover {
+  color: #e273a0;
+}
+
+footer .footer__boton--redes:hover {
+  -webkit-animation: swing;
+          animation: swing;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+footer .footer__boton--contacto {
+  font-size: 13px;
+  padding-top: 30px;
+}
+/*# sourceMappingURL=estilos.css.map */
